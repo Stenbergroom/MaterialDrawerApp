@@ -3,6 +3,7 @@ package com.stenbergroom.materialdrawerapp.app;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import com.mikepenz.materialdrawer.Drawer;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -17,5 +18,11 @@ public class MainActivity extends ActionBarActivity {
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+
+        Drawer.Result drawerResult = new Drawer ()
+                .withActivity(this)
+                .withToolbar(toolbar)
+                .withDisplayBelowToolbar(true)
+                .build();
     }
 }
