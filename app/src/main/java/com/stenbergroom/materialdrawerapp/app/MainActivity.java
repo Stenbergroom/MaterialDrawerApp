@@ -24,5 +24,7 @@ public class MainActivity extends ActionBarActivity {
                 .withToolbar(toolbar)
                 .withDisplayBelowToolbar(true)
                 .build();
+
+        // TODO add to drawer components
     }
 }
