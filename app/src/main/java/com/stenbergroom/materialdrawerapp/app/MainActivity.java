@@ -51,13 +51,13 @@ public class MainActivity extends ActionBarActivity {
                 .withDisplayBelowToolbar(true)
                 .withActionBarDrawerToggleAnimated(true)
                 .addDrawerItems(initializeDrawerItems())
-                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
-                        Intent intent = new Intent(MainActivity.this, TestActivity.class);
-                        startActivity(intent);
-                    }
-                })
+//                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+//                    @Override
+//                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l, IDrawerItem iDrawerItem) {
+//                        Intent intent = new Intent(MainActivity.this, TestActivity.class);
+//                        startActivity(intent);
+//                    }
+//                })
                 .build();
     }
 
