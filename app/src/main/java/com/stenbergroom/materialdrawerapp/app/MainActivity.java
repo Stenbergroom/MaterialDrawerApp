@@ -78,17 +78,17 @@ public class MainActivity extends ActionBarActivity {
                         .setDivider(false)};
     }
 
-//    private AccountHeader.Result createAccountHeader() {
-//
-//        IProfile profile = new ProfileDrawerItem()
-//                .withName("Stenbergroom")
-//                .withEmail("stenbergroom@gmail.com")
-//                .withIcon(getResources().getDrawable(R.drawable.ic_verified_user_black_18dp));
-//
-//        return new AccountHeader()
-//                    .withActivity(this)
-//                    .withHeaderBackground(R.drawable.material_background)
-//                    .addProfiles(profile)
-//                    .build();
-//    }
+    private AccountHeader.Result createAccountHeader() {
+
+        IProfile profile = new ProfileDrawerItem()
+                .withName("Stenbergroom")
+                .withEmail("stenbergroom@gmail.com")
+                .withIcon(getResources().getDrawable(R.drawable.ic_verified_user_black_18dp));
+
+        return new AccountHeader()
+                    .withActivity(this)
+                    .withHeaderBackground(R.drawable.material_background)
+                    .addProfiles(profile)
+                    .build();
+    }
 }
